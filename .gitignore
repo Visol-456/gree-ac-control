@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+# device keys never go into git
+devices.json
+~/.config/gree-ac-control/
