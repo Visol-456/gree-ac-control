@@ -77,6 +77,9 @@ python3 scripts/gree_ac.py set 192.168.x.x Pow=0
 - `SetTem` + `TemUn`: 设定温度（0=℃，1=℉）
 - `WdSpd`: 0=auto 1=low 2=med-lo 3=med 4=med-hi 5=high
 - `Tur`=强劲, `Quiet`=静音, `Health`, `SwhSlp`=睡眠, `Lig`=指示灯, `Blo`=干燥(X-Fan)
+- **`SwUpDn`（上下导风板）——别踩坑**：0=固定(默认) 1=**全范围上下扫风** 2-6=固定角度位置(2=最上→6=最下) 7-11=分区扫风。要"朝上打不扫风"用 **2**，不是 1！设 1 会开始上下扫风。
+- `SwingLfRig`（左右导风板）: 0=default 1=全范围扫风 2-6=固定位置(最左→最右)
+- 完整字段字典（含华氏度 TemRec 映射、TemSen 偏移、定时调度、时间同步）：见 `docs/protocol-fields.md`
 
 ## 协议要点（逆向自 tomikaa87/gree-remote）
 
