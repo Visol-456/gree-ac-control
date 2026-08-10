@@ -91,6 +91,10 @@ tests/test_gree_ac.py          # 单测（mock UDP）
 
 这套协议的安全性约等于没有：通用 key 全世界一样，任何在你家局域网里的人都能 scan → bind → 拿到设备 key → 控制你的空调。没有认证、没有防重放。介意的话别把空调接到不信任的网络里——这也是格力至今没修的老毛病。
 
+## 致谢
+
+协议逆向和加密细节主要参考了 [tomikaa87/gree-remote](https://github.com/tomikaa87/gree-remote) 的出色工作——字段字典、AES/GCM 加解密、bind 流程都来自这个项目的文档和代码。没有它，这个 skill 不可能存在。也感谢 Home Assistant 社区（RobHofmann/HomeAssistant-GreeClimateComponent）对格力设备的持续支持。
+
 ## License
 
 MIT
